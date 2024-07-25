@@ -72,7 +72,9 @@ public class MainActivity extends AppCompatActivity {
         buttonWebView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                
+                WebView webView = findViewById(R.id.webView);
+                webView.loadUrl("https://www.google.com/");
+                webView.getSettings().setJavaScriptEnabled(true);
             }
         });
     }
